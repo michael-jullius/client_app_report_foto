@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:background="@color/white"
+    android:paddingTop="20dp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/id_image_fokus"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#b0b0b0"
+            android:id="@+id/image_view"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"/>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:orientation="vertical"
+            android:background="@drawable/border_list_image"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#525252"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="tukang : "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#525252"
+                    android:id="@+id/tukang"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#525252"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ass tukang : "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#525252"
+                    android:id="@+id/assisten_tukang"
+                    android:text="-"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#525252"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="alokasi TK : "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#525252"
+                    android:id="@+id/alokasi_pekerjaan"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#525252"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="cuaca : "/>
+                <TextView
+                    android:textColor="#525252"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cuaca"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#525252"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="volume : "/>
+                <TextView
+                    android:textColor="#525252"
+                    android:id="@+id/volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#525252"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="keterangan : "/>
+                <TextView
+                    android:textColor="#525252"
+                    android:id="@+id/keteranga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_ket_user"
+                android:orientation="horizontal">
+                <TextView
+                    android:textColor="#525252"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user : "/>
+                <TextView
+                    android:textColor="#525252"
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

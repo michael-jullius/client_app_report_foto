@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".AddUserActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:theme="@style/Theme.Proyek.home.bottom.bar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/back_edit_user"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_baseline_arrow_back_24_black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:fontFamily="serif"
+                android:text="Edit User"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:padding="20dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:background="@drawable/border_user"
+                android:height="50dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/nama_user_edit"
+                android:layout_height="wrap_content"
+                android:hint="nama"
+                android:textColorHint="@color/black"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:id="@+id/username_user_edit"
+                android:textColorHint="@color/black"
+                android:hint="username"
+                android:textAlignment="center"/>
+            <EditText
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/password_user_edit"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textAlignment="center"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_edit_user"
+                android:text="ubah"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

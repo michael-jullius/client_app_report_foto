@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ImageActivity"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:theme="@style/Theme.Proyek.home.bottom.bar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/back_image_report"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_baseline_arrow_back_24_black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:fontFamily="serif"
+                android:text="Detail Foto"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <com.github.chrisbanes.photoview.PhotoView
+               android:layout_gravity="center_horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="500dp"
+               android:id="@+id/img_view"
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:padding="20dp"
+               android:background="@drawable/bg_user_table"
+               android:orientation="vertical">
+               <LinearLayout
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:textSize="15dp"
+                       android:layout_height="wrap_content"
+                       android:text="tukang : "
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:id="@+id/tukang_detail"
+                       android:textSize="15dp"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="assisten tukang : "
+                       android:textColor="@color/black"
+                       android:textSize="15dp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:id="@+id/assisten_tukang_detail"
+                       android:textSize="15dp"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:textSize="15dp"
+                       android:layout_height="wrap_content"
+                       android:text="alokasi pekerjaan : "
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:textSize="15dp"
+                       android:id="@+id/alokasi_pekerjaan_detail"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:textSize="15dp"
+                       android:layout_height="wrap_content"
+                       android:text="cuaca : "
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:id="@+id/cuaca_detail"
+                       android:textSize="15dp"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:textSize="15dp"
+                       android:layout_height="wrap_content"
+                       android:text="volume : "
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:id="@+id/volume_detail"
+                       android:textSize="15dp"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:textSize="15dp"
+                       android:layout_height="wrap_content"
+                       android:text="keterangan : "
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:id="@+id/keterangan_detail"
+                       android:textSize="15dp"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/layout_keterangan_user_detail"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:textSize="15dp"
+                       android:layout_height="wrap_content"
+                       android:text="user : "
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="-"
+                       android:id="@+id/user_detail"
+                       android:textSize="15dp"
+                       android:textColor="@color/black"/>
+               </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+
+   </ScrollView>
+</LinearLayout>

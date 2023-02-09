@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".AddImageActivity"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbarHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:theme="@style/Theme.Proyek.home.bottom.bar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/ic_baseline_arrow_back_24_black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:fontFamily="serif"
+                android:text="Detail Foto"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/ic_baseline_image_search_24"
+                android:id="@+id/view_image"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="pilih gambar"
+                android:id="@+id/pilih_gambar"/>
+            
+            <EditText
+                android:textColor="#525252"
+                android:textColorHint="#525252"
+                android:background="@drawable/bg_add_image_detail"
+                android:layout_width="match_parent"
+                android:lines="1"
+                android:id="@+id/ed_tukang"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:hint="tukang"
+                android:textAlignment="center"/>
+            <EditText
+                android:lines="1"
+                android:padding="10dp"
+                android:inputType="number"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ed_assisten_tukang"
+                android:textColor="#525252"
+                android:textColorHint="#525252"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_add_image_detail"
+                android:layout_height="wrap_content"
+                android:hint="assisen tukang"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:lines="1"
+                android:padding="10dp"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:textColor="#525252"
+                android:textColorHint="#525252"
+                android:id="@+id/ed_cuaca"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_add_image_detail"
+                android:layout_height="wrap_content"
+                android:hint="cuaca"
+                android:textAlignment="center"/>
+            <EditText
+                android:lines="1"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#525252"
+                android:textColorHint="#525252"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_add_image_detail"
+                android:layout_height="wrap_content"
+                android:id="@+id/ed_volume"
+                android:hint="volume"
+                android:textAlignment="center"/>
+            <EditText
+                android:textColor="#525252"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#525252"
+                android:scrollbars="vertical"
+                android:lines="6"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:id="@+id/ed_alokasi_pekerjaan"
+                android:background="@drawable/bg_add_image_detail"
+                android:layout_height="wrap_content"
+                android:hint="alokasi pekerjaan"/>
+            <EditText
+                android:textColor="#525252"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="#525252"
+                android:scrollbars="vertical"
+                android:lines="6"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:id="@+id/ed_keterangan"
+                android:background="@drawable/bg_add_image_detail"
+                android:layout_height="wrap_content"
+                android:hint="keterangan"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="save"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/btn_submit"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
