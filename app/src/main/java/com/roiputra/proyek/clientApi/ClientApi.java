@@ -14,7 +14,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ClientApi {
     private static Retrofit retrofit = null;
-    private static final String url = "http://103.152.119.120:4253/";
+    private static final String url = "https://api.roiputra.com/";
 //    private static final String url = "http://192.168.1.39:8000/";
 
     public static Retrofit getApi() {
